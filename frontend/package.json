@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "yarn workspace vue-ui dev"
+    "dev": "yarn workspace @forms-app/vue-ui dev"
   },
   "devDependencies": {
     "prettier": "^2.8.8",
