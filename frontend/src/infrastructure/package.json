@@ -1,0 +1,8 @@
+{
+  "name": "@forms-app/infrastructure",
+  "version": "1.0.0",
+  "description": "Infrastructure",
+  "main": "dist/src/index.js",
+  "author": "MG",
+  "license": "MIT"
+}
