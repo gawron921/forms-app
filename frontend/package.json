@@ -4,9 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "dev": "yarn workspace vue-ui dev"
   },
   "devDependencies": {
     "prettier": "^2.8.8",
