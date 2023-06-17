@@ -1,7 +1,7 @@
 {
-  "name": "@forms-app/vue-ui",
+  "name": "forms-app-vue-ui",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,7 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.47"
+    "primeflex": "^3.3.1",
+    "primeicons": "^6.0.1",
+    "primevue": "^3.29.2",
+    "vue": "^3.2.47",
+    "vue-router": "^4.2.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
