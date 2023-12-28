@@ -1,11 +1,11 @@
 <template>
-  <div class="flex justify-center">
+  <div class="flex justify-center justify-content-between">
     <div class="flex items-center">
       <p>{{ elementValues.minLabel }}</p>
     </div>
-    <div v-for="value in range" :key="`linear-scale-${value}`" class="flex flex-col p-3">
-      <label :for="`linear-scale-${value}`" class="text-center">{{ value }}</label>
-      <input :id="`linear-scale-${value}`" v-model="selected" type="radio" :name="elementValues.id" :value="value" />
+    <div v-for="value in range" :key="`linear-scale-${value}`" class="flex flex-column p-3">
+      <RadioButton :input-id="`linear-scale-${value}`" v-model="selected" :name="elementValues.id" :value="value" />
+      <label :for="`linear-scale-${value}`" class="text-center mt-2">{{ value }}</label>
     </div>
     <div class="flex items-center">
       <p>{{ elementValues.maxLabel }}</p>
@@ -16,7 +16,7 @@
 <script setup lang="ts">
 import { Ref, onMounted, ref } from "vue"
 import { LinearScale } from "forms-app-domain/src/main"
-
+import RadioButton from "primevue/radiobutton"
 const props = defineProps<{
   elementValues: LinearScale
 }>()

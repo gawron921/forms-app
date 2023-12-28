@@ -7,24 +7,22 @@
         :key="`header-${column.id}`"
         class="multiple-choice-grid-fields__cell multiple-choice-grid-fields__cell--header"
       >
-        {{ column.title }}
+        {{ column.label }}
       </div>
     </div>
-    <!-- <MultipleChoiceGridRow
-      v-for="row in elementValues.rows"
-      :key="`row-${row.id}`"
-      :row-elements="elementValues.columns"
-      :row-value="row"
-    /> -->
+    <template v-for="row in elementValues.rows" :key="row.id">
+      <MultipleChoiceGridRow :row-elements="elementValues.columns" :row-value="row" />
+      <div style="display: block; width: 100%; height: 4px"></div>
+    </template>
   </div>
 </template>
 
 <script setup lang="ts">
-// import { MultipleChoiceGrid } from "forms-app-domain/src/main"
-// import MultipleChoiceGridRow from "./MultipleChoiceGridRow.vue"
+import { MultipleChoiceGrid } from "forms-app-domain/src/main"
+import MultipleChoiceGridRow from "./MultipleChoiceGridRow.vue"
 
 defineProps<{
-  elementValues: any
+  elementValues: MultipleChoiceGrid
 }>()
 </script>
 

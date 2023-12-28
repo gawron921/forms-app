@@ -21,7 +21,7 @@ defineProps<{
 }>()
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const formsTypes: { [key: number]: any } = {
+const formsTypes: { [key: string]: any } = {
   [FormElementType.ShortText]: ShortTextInput,
   [FormElementType.LongText]: LongTextInput,
   [FormElementType.SingleChoice]: SingleChoiceInput,

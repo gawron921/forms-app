@@ -12,6 +12,7 @@ import FormCard from "../../view_wrapper/FormCard.vue"
 import FormElementDescription from "../basics/FormElementDescription.vue"
 import FormElementTitle from "../basics/FormElementTitle.vue"
 import SingleChoiceFields from "../basics/SingleChoiceFields.vue"
+
 defineProps<{
   elementValues: SingleChoice
 }>()

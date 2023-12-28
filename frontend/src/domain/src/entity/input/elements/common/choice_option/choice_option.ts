@@ -1,5 +1,5 @@
 export interface ChoiceOption {
   id: string
-  title: string
+  label: string
   limit: number | null
 }

@@ -5,11 +5,11 @@ export interface FormElement {
 }
 
 export enum FormElementType {
-  ShortText,
-  LongText,
-  SingleChoice,
-  MultipleChoice,
-  Dropdown,
-  LinearScale,
-  MultipleChoiceGrid,
+  ShortText = "short_text",
+  LongText = "long_text",
+  SingleChoice = "single_choice",
+  MultipleChoice = "multiple_choice",
+  Dropdown = "dropdown",
+  LinearScale = "linear_scale",
+  MultipleChoiceGrid = "multiple_choice_grid",
 }

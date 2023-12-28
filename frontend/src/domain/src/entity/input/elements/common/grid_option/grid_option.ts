@@ -1,6 +1,5 @@
 export interface GridOption {
-  id: string;
-  title: string;
-  limit?: number;
+  id: string
+  label: string
+  limit?: number | null
 }
-

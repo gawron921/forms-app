@@ -1,0 +1,7 @@
+services:
+  frontend:
+    build:
+      context: .
+      target: frontend-form
+    ports:
+      - "5050:80"

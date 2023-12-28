@@ -1,12 +1,12 @@
-import { GridOption } from "../grid_option";
+import { GridOption } from "../grid_option"
 
 export class GridOptionBase implements GridOption {
-  constructor(id: string, title: string, limit? : number) {
-    this.id = id;
-    this.title = title;
-    this.limit = limit;
+  constructor(id: string, label: string, limit?: number) {
+    this.id = id
+    this.label = label
+    this.limit = limit
   }
-  id: string;
-  title: string;
-  limit?: number;
+  id: string
+  label: string
+  limit?: number
 }

@@ -2,8 +2,9 @@
   <FormCard>
     <FormElementTitle :title="elementValues.title" />
     <FormElementDescription :description="elementValues.description" />
-    <ShortTextField
-      v-model:inputValue="inputValue"
+    <InputText
+      type="text"
+      v-model="inputValue"
       :placeholder="elementValues.placeholder"
       :required="elementValues.required"
     />
@@ -14,9 +15,10 @@
 import { watch, ref } from "vue"
 import FormElementDescription from "../basics/FormElementDescription.vue"
 import FormElementTitle from "../basics/FormElementTitle.vue"
-import ShortTextField from "../basics/ShortTextField.vue"
 import FormCard from "../../view_wrapper/FormCard.vue"
 import { ShortText } from "forms-app-domain/src/main"
+import InputText from "primevue/inputtext"
+
 const inputValue = ref("")
 watch(inputValue, (newValue, oldValue) => {
   console.log(oldValue)
