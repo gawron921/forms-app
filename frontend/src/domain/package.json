@@ -1,8 +1,8 @@
 {
-  "name": "@forms-app/domain",
+  "name": "forms-app-domain",
   "version": "1.0.0",
   "description": "Domain",
-  "main": "dist/src/index.js",
+  "main": "src/main.ts",
   "types": "dist/src/index.d.ts",
   "author": "MG",
   "license": "MIT"

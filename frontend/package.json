@@ -3,19 +3,21 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "license": "MIT",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "dev": "yarn workspace forms-app-vue-ui dev",
+    "build": "yarn workspace forms-app-vue-ui build"
   },
   "devDependencies": {
+    "@babel/types": "^7.22.5",
     "prettier": "^2.8.8",
     "typescript": "^5.0.2",
     "vite": "^4.3.9"
   },
   "workspaces": [
-    "src/domain",
-    "src/infrastructure",
-    "src/infrastructure/src/views/vue-ui"
-  ]
+    "src/domain/",
+    "src/infrastructure/",
+    "src/infrastructure/src/views/vue-ui/"
+  ],
+  "packageManager": "yarn@4.0.2"
 }

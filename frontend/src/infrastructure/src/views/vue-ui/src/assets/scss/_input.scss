@@ -1,0 +1,46 @@
+.short-text-field__input {
+  padding: 5px 2px;
+  transition: border-color 0.15s;
+}
+
+.short-text-field__input:focus {
+  border-color: $input-border-color;
+}
+
+.long-text-field__input {
+  padding: 5px 2px;
+  transition: border-color 0.15s;
+  resize: none;
+}
+
+.long-text-field__input:focus {
+  border-color: $input-border-color;
+}
+
+.dropdown__select {
+  border-radius: 5px;
+  border-color: #555555;
+  border-width: 1px;
+}
+
+.multiple-choice-grid-fields__table {
+  display: table;
+}
+
+.multiple-choice-grid-fields__header {
+  display: table-header-group;
+}
+
+.multiple-choice-grid-fields__row {
+  display: table-row;
+}
+.multiple-choice-grid-fields__cell {
+  display: table-cell;
+  text-align: center;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.multiple-choice-grid-fields__cell--header {
+  font-weight: 600;
+}
